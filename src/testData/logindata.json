@@ -1,0 +1,27 @@
+
+    [
+    {
+        "username":"abc@gm.com",
+        "password":"pass@123"
+    },
+
+    {
+        "username":"abc@gm.com",
+        "password":""
+    }
+    ,
+    
+    {
+        "username":"",
+        "password":"pass@123"
+    }
+
+    ,
+    
+    {
+        "username":"playwright@gm.com",
+        "password":"Test@123"
+    }
+
+
+]
