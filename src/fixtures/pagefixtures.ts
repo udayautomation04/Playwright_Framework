@@ -8,7 +8,7 @@ import { CsvHelper } from "../utils/CsvHelper"
 import { SearchResultPage } from "../pages/SearchResultPage"
 import { ProductInfoPage } from "../pages/ProductInfoPage"
 import { RegistrationPage } from "../pages/RegistrationPage"
-import { RegistrationSuccessPage } from "../pages/registrationSuccessPage"
+import { RegistrationSuccessPage } from "../pages/RegistrationSuccessPage"
 // renaming test as baseTest
 
 //define types of page fixtures: 
