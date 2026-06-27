@@ -4,7 +4,7 @@ import { test, expect } from "../src/fixtures/pagefixtures";
 
 test.beforeEach(async ({ loginPage }) => {
     await loginPage.goToLoginPage();
-    await loginPage.doLogin("Playwright@gm.com", "Test@123");
+    await loginPage.doLogin(process.env.USER_NAME!, process.env.PASSWORD!);
 })
 
 
@@ -14,6 +14,7 @@ test('testImageCount', async ({ homePage, searchResultPage, productInforPage }) 
     await searchResultPage.selectProduct('MacBook Pro');
     let actualImageCount = await productInforPage.getProductImageCount();
     console.log('totalImageCount', actualImageCount)
+
     expect(actualImageCount).toBe(4);
 
 })

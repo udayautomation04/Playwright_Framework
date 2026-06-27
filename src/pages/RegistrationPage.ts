@@ -47,35 +47,35 @@ export class RegistrationPage extends BasePage {
 
 
     async firstNameInput(firstName: string) {
-        this.firstName.fill(firstName);
+        await this.firstName.fill(firstName);
     }
     async lastNameInput(lastName: string) {
-        this.lastName.fill(lastName);
+        await this.lastName.fill(lastName);
     }
 
     async emailInput(email: string) {
-        this.email.fill(email);
+        await this.email.fill(email);
     }
 
     async telephoneInput(telephone: string) {
-        this.telephone.fill(telephone);
+        await this.telephone.fill(telephone);
     }
 
     async passwordInput(password: string) {
-        this.password.fill(password);
+        await this.password.fill(password);
     }
 
     async confirmPasswordInput(confirmPassword: string) {
-        this.confirmPassword.fill(confirmPassword);
+        await this.confirmPassword.fill(confirmPassword);
     }
 
     async agreeCheckBox() {
-        this.checkBox.check();
+        await this.checkBox.check();
     }
 
     async continueButton() {
-        this.continue.click();
-    } 
+        await this.continue.click();
+    }
 
     async yesNoRadioInput(value: string) {
         if (value === 'yes') {

@@ -10,10 +10,10 @@ test.beforeEach('', async ({ registrationPage }) => {
 
 let registrationData = CsvHelper.readCsv('src/testData/registrationData.csv');
 for (let row of registrationData) {
-    test(`registration -${row.FirstName}`, async ({ page, registrationPage, registrationSuccessPage }) => {
-        await registrationPage.fillField(RegistrationField.FIRST_NAME, row.FirstName);
+    test(`registration -${row.FirstName}`, async ({ registrationPage, registrationSuccessPage }) => {
+        await registrationPage.fillField(RegistrationField.FIRST_NAME, `row.FirstName${Date.now()}`);
         await registrationPage.fillField(RegistrationField.LAST_NAME, row.LastName);
-        await registrationPage.fillField(RegistrationField.EMAIL, row.Email);
+        await registrationPage.fillField(RegistrationField.EMAIL, `row.Email${Date.now()}@open.com`);
         await registrationPage.fillField(RegistrationField.TELEPHONE, row.Telephone);
         await registrationPage.fillField(RegistrationField.PASSWORD, row.Password);
         await registrationPage.fillField(RegistrationField.CONFIRM_PASSWORD, row.Password);
@@ -27,12 +27,13 @@ for (let row of registrationData) {
 }
 
 
-let registrationData1 = CsvHelper.readCsv('src/testData/registrationData.csv');
+let registrationData1 = CsvHelper.readCsv('src/testData/registration2Data.csv');
 for (let row of registrationData1) {
     test(`registrationPageWithSingleMethods -${row.FirstName}`, async ({ page, registrationPage, registrationSuccessPage }) => {
-        await registrationPage.firstNameInput(row.FirstName);
+        await registrationPage.firstNameInput(`row.FirstName${Date.now()}`);
         await registrationPage.lastNameInput(row.LastName);
-        await registrationPage.emailInput(row.Email);
+        await registrationPage.emailInput(`row.Email${Date.now()}@open.com`);
+        await page.pause()
         await registrationPage.telephoneInput(row.Telephone);
         await registrationPage.passwordInput(row.Password);
         await registrationPage.confirmPasswordInput(row.Password);

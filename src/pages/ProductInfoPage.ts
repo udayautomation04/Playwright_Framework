@@ -23,8 +23,8 @@ export class ProductInfoPage extends BasePage {
     }
 
     async getProductImageCount(): Promise<number> {
-        // this.page.waitForTimeout(4000);
-        this.productImages.first().waitFor({ state: 'visible' });
+     // await this.page.waitForTimeout(4000);
+    await this.productImages.first().waitFor({ state: 'visible' });
         return await this.productImages.count();
     }
 
