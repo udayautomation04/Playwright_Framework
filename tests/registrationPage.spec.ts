@@ -10,7 +10,7 @@ test.beforeEach('', async ({ registrationPage }) => {
 
 let registrationData = CsvHelper.readCsv('src/testData/registrationData.csv');
 for (let row of registrationData) {
-    test(`registration -${row.FirstName}`, async ({ registrationPage, registrationSuccessPage }) => {
+    test(` @smoke registration -${row.FirstName}`, async ({ registrationPage, registrationSuccessPage }) => {
         await registrationPage.fillField(RegistrationField.FIRST_NAME, `row.FirstName${Date.now()}`);
         await registrationPage.fillField(RegistrationField.LAST_NAME, row.LastName);
         await registrationPage.fillField(RegistrationField.EMAIL, `row.Email${Date.now()}@open.com`);

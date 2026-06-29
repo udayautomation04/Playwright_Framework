@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
     await loginPage.goToLoginPage();
 });
 
-test('loginPageTitle', async ({ page }) => {
+test('@smoke loginPageTitle', async ({ page }) => {
     const pageTitle = await loginPage.getLoginPageTitle();
     console.log('login page title', pageTitle);
     expect(pageTitle).toBe('Account Login');
