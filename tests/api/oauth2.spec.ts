@@ -11,7 +11,7 @@ let OAUTH_CONFIG = {
 
 let accessToken: string;
 
-test.beforeEach('@smoke POST-- generate', async ({ request }) => {
+test.beforeEach('@smoke @sanity @regression POST-- generate', async ({ request }) => {
 
     let response = await request.post(OAUTH_CONFIG.tokenURL, {
         form: {

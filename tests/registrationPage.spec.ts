@@ -29,11 +29,10 @@ for (let row of registrationData) {
 
 let registrationData1 = CsvHelper.readCsv('src/testData/registration2Data.csv');
 for (let row of registrationData1) {
-    test(`registrationPageWithSingleMethods -${row.FirstName}`, async ({ page, registrationPage, registrationSuccessPage }) => {
+    test(`@sanity @regression registrationPageWithSingleMethods -${row.FirstName}`, async ({ page, registrationPage, registrationSuccessPage }) => {
         await registrationPage.firstNameInput(`row.FirstName${Date.now()}`);
         await registrationPage.lastNameInput(row.LastName);
         await registrationPage.emailInput(`row.Email${Date.now()}@open.com`);
-        await page.pause()
         await registrationPage.telephoneInput(row.Telephone);
         await registrationPage.passwordInput(row.Password);
         await registrationPage.confirmPasswordInput(row.Password);

@@ -9,7 +9,7 @@ test.beforeEach(async ({ loginPage }) => {
 
 
 
-test('testImageCount', async ({ homePage, searchResultPage, productInforPage }) => {
+test('@sanity @regression testImageCount', async ({ homePage, searchResultPage, productInforPage }) => {
     await homePage.doSearch('macbook');
     await searchResultPage.selectProduct('MacBook Pro');
     let actualImageCount = await productInforPage.getProductImageCount();
@@ -20,7 +20,7 @@ test('testImageCount', async ({ homePage, searchResultPage, productInforPage }) 
 })
 
 
-test('testProd', async ({ homePage, searchResultPage, productInforPage }) => {
+test('@sanity @regression verify product details', async ({ homePage, searchResultPage, productInforPage }) => {
     await homePage.doSearch('macbook');
     await searchResultPage.selectProduct('MacBook Pro');
     let actualProductInfo = await productInforPage.getProductInfo();

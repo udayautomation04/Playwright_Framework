@@ -14,19 +14,19 @@ test.beforeEach(async ({ page }) => {
 
 })
 
-test('homePageTitleTest', async ({ }) => {
+test('@sanity homePageTitleTest', async ({ }) => {
     let actualHomePageTitle = await homePage.getHomePageTitle();
     expect(actualHomePageTitle).toBe('My Account');
 })
 
 
 
-test('Logout Link visible', async ({ page }) => {
+test('@smoke Logout Link visible', async ({ page }) => {
     expect(await homePage.isLogoutLinkPresent()).toBeTruthy();
 })
 
 
-test('verify HomePAge headers List', async ({ }) => {
+test('@sanity @regression verify HomePAge headers List', async ({ }) => {
     let actualHeadersList = await homePage.getHomePageHeaders();
     console.log(actualHeadersList)
     expect(actualHeadersList).toHaveLength(4);

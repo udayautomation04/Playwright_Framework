@@ -19,7 +19,7 @@ test('forgotPassword', async ({ loginPage }) => {
     expect(await loginPage.isForgottenPasswordExist()).toBeTruthy();
 });
 
-test('userIsAbleToLogin', async ({ loginPage, homePage }) => {
+test('@sanity @regression userIsAbleToLogin', async ({ loginPage, homePage }) => {
     await loginPage.doLogin(process.env.USER_NAME!, process.env.PASSWORD!);
     expect(await homePage.isLogoutLinkPresent()).toBeTruthy();
 })
@@ -27,7 +27,7 @@ test('userIsAbleToLogin', async ({ loginPage, homePage }) => {
 
 // DD sequential: invalid user login with sequential mode.
 // Drawback is all user try to login in single browser sequential note if 4 user failed then 5 and 6 will not get run
-test('invalidLogin', async ({ loginPage, testData }) => {
+test('@smoke @sanity @regression invalidLogin', async ({ loginPage, testData }) => {
     for (let row of testData) {
         await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isLoginErrorDisplayed).toBeTruthy();
@@ -38,7 +38,7 @@ test('invalidLogin', async ({ loginPage, testData }) => {
 
 let testData = CsvHelper.readCsv('src/testData/loginData.csv');
 for (let row of testData) {
-    test(`invalid user login test-${row.username}`, async ({ loginPage }) => {
+    test(`@sanity @regression invalid user login test-${row.username}`, async ({ loginPage }) => {
         await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isLoginErrorDisplayed).toBeTruthy();
     })
@@ -48,7 +48,7 @@ for (let row of testData) {
 
 let jsonTestData = JsonHelper.readJson('src/testData/logindata.json');
 for (let row of jsonTestData) {
-     test(`invalid user login JsonData - ${row.username}- ${row.password}`, async ({ loginPage }) => {
+    test(`@sanity @regression invalid user login JsonData - ${row.username}- ${row.password}`, async ({ loginPage }) => {
         await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isLoginErrorDisplayed).toBeTruthy();
     })

@@ -40,7 +40,7 @@ let userExpectedSchema = {
     ]
 };
 
-test('GET--user', async ({ apiUtility }) => {
+test('@sanity GET--user', async ({ apiUtility }) => {
     
     let userData = {
         name: 'uday101',

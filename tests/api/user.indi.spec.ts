@@ -23,7 +23,7 @@ async function createUser(apiUtility: any) {
 // Test1 : Create and Verify with get call
 //Post- get
 
-test('Create And Get', async ({ apiUtility }) => {
+test('@sanity @regression Create And Get', async ({ apiUtility }) => {
     //create user
     let userResponse = await createUser(apiUtility);
 
@@ -39,7 +39,7 @@ test('Create And Get', async ({ apiUtility }) => {
 // Test 2: Create> Update> Get
 
 
-test('Create, Update And Get', async ({ apiUtility }) => {
+test('@sanity @regression Create, Update And Get', async ({ apiUtility }) => {
     //create user
     let userResponse = await createUser(apiUtility);
 

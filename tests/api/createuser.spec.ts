@@ -6,7 +6,7 @@ import { test, expect } from "../../src/fixtures/apifixtures";
 const TOKEN = process.env.APITOKEN!;
 let AUTH_HEADER = { Authorization: `Bearer ${TOKEN}` };
 let userId: number;
-test.describe.serial('running e2e go rest crud api tests', () => {
+test.describe.serial('@smoke @regression @running e2e go rest crud api tests', () => {
 
 test('GET API -- get all users', async ({ apiUtility }) => {
     let response = await apiUtility.get('/public/v2/users', AUTH_HEADER);

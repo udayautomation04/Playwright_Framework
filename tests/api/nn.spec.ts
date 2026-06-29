@@ -4,7 +4,7 @@ import { test, expect } from "../../src/fixtures/apifixtures";
 const TOKEN = process.env.APITOKEN!;
 let AUTH_HEADER = { Authorization: `Bearer ${TOKEN}` };
 let userId: number;
-test('@smoke Post API--Create user', async ({ apiUtility }) => {
+test('@smoke @sanity Post API--Create user', async ({ apiUtility }) => {
 
     let userData = {
         name: 'uday101',
