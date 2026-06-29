@@ -22,7 +22,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 4
     environment: ${{ github.event.inputs.environment || 'QA' }}
 
     steps:
