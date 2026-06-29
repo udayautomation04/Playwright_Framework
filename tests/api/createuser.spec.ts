@@ -3,7 +3,7 @@ import { config } from "process";
 import { test, expect } from "../../src/fixtures/apifixtures";
 
 
-const TOKEN = process.env.APIToken!;
+const TOKEN = process.env.APITOKEN!;
 let AUTH_HEADER = { Authorization: `Bearer ${TOKEN}` };
 let userId: number;
 test.describe.serial('running e2e go rest crud api tests', () => {
