@@ -15,8 +15,8 @@ import dotenv from "dotenv"
  */
 
 // below two line for  read config
-const ENV =process.env.Env||'qa';
-dotenv.config({path: `config/.env.${ENV}` });
+const ENV = process.env.Env || 'qa';
+dotenv.config({ path: `config/.env.${ENV}` });
 
 export default defineConfig({
   testDir: './tests',
@@ -51,7 +51,7 @@ export default defineConfig({
     video: 'retain-on-failure',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    headless: !process.env.CI? false: true,
+    headless: !process.env.CI ? false : true,
   },
 
   /* Configure projects for major browsers */
@@ -71,10 +71,10 @@ export default defineConfig({
     //   use: { ...devices['Desktop Safari'] },
     // },
 
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
+    {
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    },
 
     /* Test against mobile viewports. */
     // {
