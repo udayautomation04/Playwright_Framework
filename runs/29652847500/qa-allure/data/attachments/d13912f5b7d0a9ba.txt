@@ -1,0 +1,48 @@
+res>> APIResponse: 200 OK
+  Date: Sat, 18 Jul 2026 16:55:29 GMT
+  Content-Type: application/json; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: max-age=0, private, must-revalidate
+  content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-6V8VT2xPqUwON+rk0nOeHw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  etag: W/"62e6aa1d31ca0644e84e6c862bf5dd56"
+  feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  referrer-policy: strict-origin-when-cross-origin
+  strict-transport-security: max-age=63072000; includeSubDomains
+  vary: Origin
+  x-content-type-options: nosniff
+  x-frame-options: SAMEORIGIN
+  x-permitted-cross-domain-policies: none
+  x-ratelimit-limit: 300
+  x-ratelimit-remaining: 295
+  x-ratelimit-reset: 1
+  x-request-id: ff167745-68b2-41f1-929c-4be597a9fa41
+  x-runtime: 0.030314
+  x-xss-protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  cf-cache-status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FUeIkQfyStZRDbbXbfoNemOi9jpfzNMW%2B7c4EfKndhIyejzFF5QbJyGsvQA59FNOf17EdHDehikGIf%2FmCgpsV2wBlGPVr%2FLCs7zpDJJ6LLq8Nuscib9sAjAQW5zcEks%3D"}]}
+  Content-Encoding: br
+  Server: cloudflare
+  CF-RAY: a1d303a878d5f7e5-LAX
+  alt-svc: h3=":443"; ma=86400
+putResponse {
+  status: 200,
+  body: {
+    id: 8549621,
+    name: 'uday101Updated',
+    email: 'automation_1784393728625@open.com',
+    gender: 'male',
+    status: 'inactive'
+  }
+}
+getResponse {
+  status: 200,
+  body: {
+    id: 8549621,
+    name: 'uday101Updated',
+    email: 'automation_1784393728625@open.com',
+    gender: 'male',
+    status: 'inactive'
+  }
+}
