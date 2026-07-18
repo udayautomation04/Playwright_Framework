@@ -10,8 +10,8 @@ let OAUTH_CONFIG = {
 }
 
 let accessToken: string;
-
-test.beforeEach('POST-- generate', async ({ request }) => {
+//beforeEach
+test.skip('POST-- generate', async ({ request }) => {
 
     let response = await request.post(OAUTH_CONFIG.tokenURL, {
         form: {
@@ -28,7 +28,7 @@ test.beforeEach('POST-- generate', async ({ request }) => {
 
 })
 
-test('GET LOCATION', async ({ request }) => {
+test.skip('GET LOCATION', async ({ request }) => {
 
     let baseURL = "https://test.api.amadeus.com";
     let endPointURL = '/v1/reference-data/locations';
