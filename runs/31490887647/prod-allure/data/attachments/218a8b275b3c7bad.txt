@@ -1,0 +1,4 @@
+userCreds:invalid@gm.com: test@123
+userCreds:test@gm.com: 
+userCreds:: onlyPass@123
+userCreds:Playwright@gm.com: hs@123

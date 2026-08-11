@@ -1,0 +1,19 @@
+userCreds:playwright@gm.com: Test@123
+search key: macbook
+metaData is>> [
+  'Brand: Apple',
+  'Product Code: Product 18',
+  'Reward Points: 800',
+  'Availability: Out Of Stock'
+]
+metaData priceis>> [ '$2,000.00', 'Ex Tax: $2,000.00' ]
+actual data Map(8) {
+  'Product Header' => 'MacBook Pro',
+  'Product images' => 4,
+  'Brand' => ' Apple',
+  'Product Code' => ' Product 18',
+  'Reward Points' => ' 800',
+  'Availability' => ' Out Of Stock',
+  'Price' => '$2,000.00',
+  'exTaxPrice' => '$2,000.00'
+}

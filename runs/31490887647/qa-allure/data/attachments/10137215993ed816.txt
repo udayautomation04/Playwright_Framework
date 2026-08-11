@@ -1,0 +1,108 @@
+res>> APIResponse: 200 OK
+  Date: Tue, 11 Aug 2026 12:24:28 GMT
+  Content-Type: application/json; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: max-age=0, private, must-revalidate
+  content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-C+eCAXD4831Rr+xv34wRbw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  etag: W/"d13897251ecb5f8784b41840e192748f"
+  feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  referrer-policy: strict-origin-when-cross-origin
+  strict-transport-security: max-age=63072000; includeSubDomains
+  vary: Origin
+  x-content-type-options: nosniff
+  x-frame-options: SAMEORIGIN
+  x-links-current: https://gorest.co.in/public/v2/users?page=1
+  x-links-next: https://gorest.co.in/public/v2/users?page=2
+  x-links-previous: 
+  x-pagination-limit: 10
+  x-pagination-page: 1
+  x-pagination-pages: 297
+  x-pagination-total: 2967
+  x-permitted-cross-domain-policies: none
+  x-ratelimit-limit: 300
+  x-ratelimit-remaining: 299
+  x-ratelimit-reset: 0
+  x-request-id: 379a1b25-b8af-4d5b-9dac-7b22dadf593d
+  x-runtime: 0.061083
+  x-xss-protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  cf-cache-status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qSvz3LWH4KIq9nPfw1K0WrfVTu1%2FC%2Be9i%2ByINaC7rSKOjYGC8pDzR4cQYCp3VmQBXbSVlIom2Opx5VUDJ%2BuB%2F%2B9U0BTuwHV4Y6DkYorvShH35KJSwmOngbevvarQbUA%3D"}]}
+  Content-Encoding: br
+  Server: cloudflare
+  CF-RAY: a29737a5989fb4c4-LAX
+  alt-svc: h3=":443"; ma=86400
+Token is  73581e5394f105c46080089e0faf715fb30360dc4a722d0256a52cd5976e8cd3
+[
+  {
+    id: 8575684,
+    name: 'uday101',
+    email: 'automation_1786450995567@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8575119,
+    name: 'uday101',
+    email: 'automation_1786399665069@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8575117,
+    name: 'uday101Updated',
+    email: 'automation_1786399664225@open.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8575118,
+    name: 'uday101',
+    email: 'automation_1786399663496@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8575116,
+    name: 'uday101',
+    email: 'automation_1786399663497@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8575115,
+    name: 'uday101Updated',
+    email: 'automation_1786399662432@open.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8575114,
+    name: 'uday101',
+    email: 'automation_1786399662428@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8575101,
+    name: 'uday101',
+    email: 'automation_1786399607814@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8575096,
+    name: 'uday101',
+    email: 'automation_1786399539025@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8575094,
+    name: 'uday101Updated',
+    email: 'automation_1786399537933@open.com',
+    gender: 'male',
+    status: 'inactive'
+  }
+]
